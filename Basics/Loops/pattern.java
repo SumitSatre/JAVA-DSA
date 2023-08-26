@@ -1,12 +1,9 @@
 import java.util.*;
 
 public class pattern {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter number : ");
-        int n = sc.nextInt();
-
+    static void pattern1(int n){
+        
         for(int i = 0 ; i<n ; i++){
             
             for(int j = 0 ; j< n-i-1 ; j++){
@@ -23,5 +20,15 @@ public class pattern {
 
             System.out.println("");
         }
+    }
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number : ");
+        int n = sc.nextInt();
+        sc.close();
+
+        pattern1(n);
     }
 }
