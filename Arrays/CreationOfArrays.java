@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class CreationOfArrays {
     public static void main(String[] args){
         int marks[] ;
