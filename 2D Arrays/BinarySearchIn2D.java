@@ -1,5 +1,7 @@
 public class BinarySearchIn2D {
 
+    // this 2d array is sorted by rows and columns 
+    // this 2d array is not sorted linearly
     public static void BinarySearchIn2DArray(int arr[][], int key) {
         int row = 0;
         int col = arr[0].length - 1;

@@ -10,6 +10,7 @@ public class MaxSubArray {
                 for (int k = i; k <= j; k++) {
                     m = m + arr[k];
                 }
+                // m == sum of sub array
 
                 if(m>max){
                     max = m;
@@ -20,7 +21,9 @@ public class MaxSubArray {
         return max;
     }
 
+    // by prefix method
     public static int ByPrefixMaxSubArrays(int arr[]) {
+
         int max = Integer.MIN_VALUE;
 
         int prefix[] = new int[arr.length];
@@ -49,11 +52,14 @@ public class MaxSubArray {
 
     public static void main(String[] args) {
 
-        int arr[] = { -5, -2, -5, -9, 45 };
+        int arr[] = { -5, 2, 4, -9, 1 };
 
         // System.out.println("Max sum is : "+subArrays(arr));
 
+        subArrays(arr);
         System.out.println("Max sum is : "+ByPrefixMaxSubArrays(arr));
     }
 
 }
+
+// prefix[] = {-5 , -3 , 1 , -8 , -7}
