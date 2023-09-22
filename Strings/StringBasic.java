@@ -6,6 +6,7 @@ public class StringBasic {
         // Ways to create string
         String str = "Sumit satre";
         // String s = new String("Hi");
+        str = str + "dkm";
 
         System.out.print("Enter String : ");
         Scanner sc = new Scanner(System.in);

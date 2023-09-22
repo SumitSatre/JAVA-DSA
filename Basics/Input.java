@@ -14,6 +14,8 @@ public class Input{
 
         System.out.println(p);
 
+        System.out.println(Integer.MIN_VALUE);
+
         sc.close(); 
     }
 } 
