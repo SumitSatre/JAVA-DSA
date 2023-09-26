@@ -27,5 +27,6 @@ public class CompareStrings {
         else{
             System.out.println("Strings are not equal");
         }
+
     }
 }
