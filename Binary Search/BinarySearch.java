@@ -24,6 +24,6 @@ public class binarySearch{
     public static void main(String []args){
         int arr[] = {1,2,5,9,45,89,96,566};
 
-        System.out.println( Search(arr , 0) );
+        System.out.println( Search(arr , 556) );
     }
 }

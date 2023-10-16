@@ -46,7 +46,7 @@ class KeyPairInSortedArray{
 
         int x = 5;
 
-findExactSum(arr , x);
-findExactDiff(arr , x);
+    findExactSum(arr , x);
+    findExactDiff(arr , x);
     }
 }
