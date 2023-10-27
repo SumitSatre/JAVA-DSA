@@ -14,7 +14,7 @@ class StringMethods{
 
         // This will print substring from index to index or from index
 
-        // In this start index is included but end undex is excluded
+        // In this start index is included but end index is excluded
         System.out.println("sub string is : " + s.substring(1 , 3));
 
         // this will return string from start index to end

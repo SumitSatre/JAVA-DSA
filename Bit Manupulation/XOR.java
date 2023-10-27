@@ -1,5 +1,6 @@
 class XOR{
 
+    // this method is used to frind xor of 1 to n elements directly
     static int getxor(int n){
         switch(n%4){
             case 0:
