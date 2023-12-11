@@ -4,7 +4,7 @@ class CreateArraylist{
 
     public static void main(String [] args){
 
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<Integer>();
         ArrayList<Boolean> list2 = new ArrayList<>();
         ArrayList<Float> list3 = new ArrayList<>();
         ArrayList<String> list4 = new ArrayList<>();

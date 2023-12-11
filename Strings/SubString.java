@@ -21,5 +21,7 @@ public class SubString {
         // In built sub String function
         System.out.println( str.substring(0, 5) );
 
+        String a = '0'*3;
+
     }
 }

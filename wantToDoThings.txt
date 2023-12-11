@@ -1,0 +1,14 @@
+List<String> listOfValues = Arrays.asList("apple", "banana", "apple", "orange");
+
+Set<Integer> set1 = new HashSet<>(Arrays.asList(1, 2, 3));
+
+If you need to maintain the order in which elements are inserted, you can use LinkedHashSet, which is another implementation of the Set interface.
+
+// way to convert set arraylist into array 
+Integer arr[] = set.toArray(new Integer[0]);
+
+System.out.println(arr[0]);
+
+int[] arr = integerSet.stream().mapToInt(Integer::intValue).toArray();
+
+// permutations in array

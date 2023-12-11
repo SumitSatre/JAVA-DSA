@@ -27,7 +27,7 @@ class OperationsOnArrayList{
 
     // remove element at particular index
     list.remove(2);
-    System.out.println(list);  // that element is removed and size is decreased by one
+    System.out.println("after removed"+list);  // that element is removed and size is decreased by one
 
     // get element at particular index
     System.out.println("list.indexOf(2) : " + list.indexOf(2));
