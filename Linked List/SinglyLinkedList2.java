@@ -121,6 +121,23 @@ class LinkedList1 {
 
     }
 
+    boolean detectCycle(){
+        Node slow = head , fast = head;
+
+        while(fast != null && fast.next != null){
+
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if(slow == fast){
+                return true;
+            }
+        }
+
+        return false;
+        
+    }
+
     void display() {
         Node temp = head;
         while (temp != null) {
@@ -155,5 +172,7 @@ class SinglyLinkedList2 {
 
         ll.slowAndFast();
         ll.display();
+
+        System.out.println("Cycle is : " + ll.detectCycle());
     }
 }
