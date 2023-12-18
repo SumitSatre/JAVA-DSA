@@ -123,6 +123,63 @@ class LinkedList {
         }
     }
 
+    void reverse(){
+        if(head == null){
+            return;
+        }
+
+        tail = head;
+        Node pre = null , curr = head , next ;
+        
+        while(curr !=null ){
+            next = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = next;
+        }
+
+        head = pre;
+    }
+
+    boolean isPalindrome(Node head) 
+    {
+        if(head == null || head.next == null){
+            return true;
+        }
+        
+      Node slow = head , fast = head;
+      
+      while (fast != null && fast.next != null){
+          slow = slow.next;
+          fast = fast.next.next;
+      }
+      
+      // Reverse the second half of linked list
+      
+      
+        Node pre = null , curr = slow , next ;
+        
+        while(curr !=null ){
+            next = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = next;
+        }
+
+        Node right = pre;
+        Node left = head;
+        
+        while( right != null ){
+            if(right.data != left.data){
+                return false;
+            }
+            right = right.next;
+            left= left.next;
+        }
+        
+        return true;
+    }
+
     public void display() {
         Node temp = head;
 
@@ -155,6 +212,10 @@ public class SinglyLinkedList {
         linkedList.add(1);
         linkedList.add(2);
         linkedList.add(3);
+        linkedList.add(4);
+        linkedList.add(5);
+        linkedList.add(6);
+        linkedList.add(7);
 
         linkedList.display();
 
@@ -172,9 +233,16 @@ public class SinglyLinkedList {
 
         System.out.println("tails data : " + linkedList.tail.data);
 
-        linkedList.search(2);
+       linkedList.search(7);
+//
+      //  Node temp = linkedList.head;
+       // linkedList.searchRecursion( temp , 2);
 
-        linkedList.searchRecursion(linkedList.head , 2);
+        linkedList.reverse();
+
+        linkedList.display();
+
+        System.out.println("is pallindrome : " + linkedList.isPalindrome(linkedList.head));
     }
 
 }
