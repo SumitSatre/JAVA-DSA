@@ -12,3 +12,8 @@ System.out.println(arr[0]);
 int[] arr = integerSet.stream().mapToInt(Integer::intValue).toArray();
 
 // permutations in array
+
+what is diff between object and normal variables
+why string is object 
+
+Circular queue
