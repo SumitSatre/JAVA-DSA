@@ -1,22 +1,28 @@
 public class InsertionSort {
     public static void InsertionSortFunction(int arr[]){
         int i , j;
-        for(i = 1 ; i < arr.length ; i++ ){
+        for ( i = 0 ; i<arr.length ; i++){
+
             int element = arr[i];
-            for(j = i-1 ; j>=0 ;j-- ){
-                if(arr[j] > element ){
+
+            for( j = i-1 ; j>=0 ; j--){
+
+                if(arr[j]>element){
                     arr[j+1] = arr[j];
                 }
                 else{
                     break;
                 }
+
             }
-            arr[j+1] = element;
+
+            arr[j+1] = element ;
+
         }
     }
 
     public static void main(String[] args){
-        int arr[] = {5,484,13,21,1,-332,16,51,6845,-1};
+        int arr[] = {5,12,13,21,1,-3,16,51,5,-1};
 
         InsertionSortFunction(arr);
 

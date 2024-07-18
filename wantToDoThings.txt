@@ -17,3 +17,7 @@ what is diff between object and normal variables
 why string is object 
 
 Circular queue
+
+File handling in java
+
+Exception handling in java

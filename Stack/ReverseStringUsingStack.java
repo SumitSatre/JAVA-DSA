@@ -51,7 +51,7 @@ public class ReverseStringUsingStack {
             stack.push(ch);
         } 
 
-        StringBuilder result = new StringBuilder();
+        StringBuilderMethods result = new StringBuilderMethods();
 
         while(!stack.isEmpty()){
             char ch = stack.pop();
