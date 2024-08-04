@@ -1,3 +1,4 @@
+package Practice;
 public class Basic{   
 
     public static int getCount(String word , String sentence){

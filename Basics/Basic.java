@@ -1,3 +1,5 @@
+import Practice.Basic;
+
 public class Basic {
     
     // Binary search function

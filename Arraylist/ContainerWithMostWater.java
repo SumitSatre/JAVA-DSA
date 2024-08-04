@@ -58,7 +58,6 @@ class ContainerWithMostWater{
         
         storeWater(list);
 
-storeWaterByTwoPointerApproach(list);
-        
+        storeWaterByTwoPointerApproach(list);
     }
 }
