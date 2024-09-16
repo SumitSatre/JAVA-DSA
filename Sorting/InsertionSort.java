@@ -1,7 +1,7 @@
 public class InsertionSort {
     public static void InsertionSortFunction(int arr[]){
         int i , j;
-        for ( i = 0 ; i<arr.length ; i++){
+        for ( i = 1 ; i<arr.length ; i++){
 
             int element = arr[i];
 

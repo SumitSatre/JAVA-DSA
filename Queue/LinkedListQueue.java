@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Node {
   int data;
   Node next;
@@ -44,21 +46,30 @@ public class LinkedListQueue {
 
   public static void main(String[] args) {
 
-    LinkedListQueue queue = new LinkedListQueue();
+//    LinkedListQueue queue = new LinkedListQueue();
+//
+//    // Adding elements to the queue
+//    queue.add(5);
+//    queue.add(6);
+//    queue.add(7);
+//    queue.add(8);
+//    queue.add(9);
+//
+//    // Removing and printing elements from the queue until it's empty
+//    while (!queue.isEmpty()) {
+//      System.out.println("Element is: " + queue.remove());
+//    }
+//
+//    queue.add(5);
+//    queue.remove();''
 
-    // Adding elements to the queue
+    Queue<Integer> queue = new LinkedList<>();
     queue.add(5);
     queue.add(6);
     queue.add(7);
     queue.add(8);
     queue.add(9);
 
-    // Removing and printing elements from the queue until it's empty
-    while (!queue.isEmpty()) {
-      System.out.println("Element is: " + queue.remove());
-    }
-
-    queue.add(5);
-    queue.remove();''
+    System.out.println(queue.peek());
   }
 }
